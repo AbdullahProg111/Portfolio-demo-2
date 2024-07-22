@@ -1,0 +1,852 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #010021;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav{
+    padding: 0 6vw;
+    height: 80px;
+    width: 100%;
+    background-color: #100f3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav i{
+    display: none;
+}
+
+.nav .sub-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.sub-nav ul li{
+    list-style: none;
+}
+
+.sub-nav ul li a::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #c39ce8;
+    border-radius: 25px;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.sub-nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+.sub-nav ul li a{
+    font-weight: 500;
+    transition: .4s;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: #fff;
+}
+
+.nav h1{
+    color: #fff;
+    font-size: 1.7vw;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav button{
+    padding: .9vw 1.7vw;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #a26cd5;
+    transition: all .4s;
+}
+
+.nav button:hover{
+    box-shadow: 0 0 25px 0px #c39ce8;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1 .left{
+    width: 55%;
+}
+
+.section1 .left h2{
+    margin-top: 7vw;
+    padding: 7vw;
+    width: 100%;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #fff;
+    margin-left: -2vw;
+}
+
+.section1 .left h2 span{
+    color: #a26cd5;
+}
+
+.left #element{
+    color: #a26cd5;
+    font-size: 4vw;
+}
+
+.section1 .left #button1{
+    padding: .9vw 2.1vw;
+    font-size: 1.3vw;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #c0bffa;
+    border-radius: 4px;
+    margin-left: 5vw;
+    position: relative;
+    top: -30px;
+    cursor: pointer;
+}
+
+.section1 .left #button1 i{
+    margin-left: 5px;
+}
+
+.section1 .left #button2{
+    padding: .9vw 2.1vw;
+    font-size: 1.3vw;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #c0bffa;
+    border-radius: 4px;
+    margin-left: 2vw;
+    position: relative;
+    top: -30px;
+    cursor: pointer;
+}
+
+#button2 i{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.section1 .right{
+    width: 45%;
+}
+
+.right img{
+    width: 40vw;
+    margin-top: 7vw;
+    border-radius: 10px;
+}
+
+hr{
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 15vw;
+    height: .1px;
+    border: 1.5px solid #2323238a;
+    border-radius: 25px;
+}
+
+.section2{
+    width: 100%;
+    margin-top: 8vw;
+    height: 60vh;
+}
+
+.section2 h3{
+    margin-left: 5.66vw;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 11vw;
+}
+
+.section2 h5{
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin-left: 5.66vw;
+    margin-bottom: .2vw;
+}
+
+.section2 .box{
+    display: flex;
+    width: 80vw;
+    background-color: #fff;
+    height: 2px;
+    margin: 76px 0;
+    margin-left: 8.7vw;
+}
+
+.section2 .box .vertical{
+    height: 5vw;
+    width: 2px;
+    background-color: #fff;
+    margin: 0 127px;
+}
+
+.vertical .image-top{
+    top: -47px;
+    width: 3rem;
+    border-radius: 9px;
+    position: relative;
+    left: -21px;
+}
+
+.vertical .vertical-title h4{
+    font-weight: 300;
+    color: rgba(211, 211, 211, 0.88);
+    position: relative;
+    top: 35px;
+    left: -70px;
+    width: 15vw;
+}
+
+.section3{
+    height: 60vh;
+    width: 100%;
+}
+
+.section3 .qualities h3{
+    margin-left: 5.66vw;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3vw;
+}
+
+.section3 .qualities ul{
+    font-size: 1.3vw;
+    margin-left: 12vw;
+    color: rgba(181, 180, 180, 0.78);
+    line-height: 2.5vw;
+    width: 70%;
+}
+
+.skills-section{
+    margin-top: 6vw;
+    height: 60vh;
+    width: 100%;
+}
+
+.skills-section h3{
+    margin-left: 5.66vw;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3vw;
+}
+
+.skills-section h4{
+    /* margin-left: 12vw; */
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 400;
+    color: #dcdcdc;
+    position: relative;
+}
+
+.skills-section h4::before{
+    margin-top: 20px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 65px;
+    background-color: #c39ce8;
+    margin-left: -80px;
+}
+
+.skills-section h4::after{
+    margin-top: 20px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 65px;
+    background-color: #c39ce8;
+    margin-left: 18px;
+}
+
+.technical-skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw 6vw;
+}
+
+.technical-skills .list1 ul{
+    color: gray;
+}
+
+.technical-skills .list2 ul{
+    color: gray;
+}
+
+.technical-skills .list3 ul{
+    color: gray;
+}
+
+.about{
+    height: 40vh;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.my-intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3vw;
+}
+
+.about h3{
+    margin-left: 5.66vw;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+.about .left-side{
+    width: 45%;
+}
+
+.left-side img{
+    width: 30vw;
+    /* padding: 5vw; */
+    border-radius: 30px;
+    position: relative;
+    left: 10%;
+    box-shadow: 0 0 25px 1px #d5b9f0;
+}
+
+.about .right-side{
+    width: 55%;
+}
+
+.right-side h4{
+    color: rgb(195, 195, 195);
+    width: 80%;
+    font-weight: 300;
+    line-height: 2.2vw;
+    font-size: 1.3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer{
+    margin-top: 11vw;
+    width: 100%;
+    height: 52vh;
+    background-color: #100f3e;
+}
+
+.footer h2{
+    font-weight: 400;
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+    padding: 4.25vw 0;
+}
+
+.footer h2::before{
+    margin-top: 25px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 65px;
+    background-color: #c39ce8;
+    margin-left: -80px;
+}
+
+.footer h2::after{
+    margin-top: 25px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 65px;
+    background-color: #c39ce8;
+    margin-left: 18px;
+}
+
+.footer .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icons .items{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    cursor: pointer;
+    border: 1.70px solid #010021;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons .items:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 18px 2px #010021;
+}
+
+.items i{
+    color: #fff;
+    font-size: 1.8vw;
+}
+
+.footer .text{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 5vw;
+}
+
+.text h5{
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer #input{
+    margin-top: 4vw;
+    padding: 1.1vw 2vw;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+    left: 35%;
+    width: 19vw;
+}
+
+.footer #input::placeholder{
+    font-size: 1.3vw;
+}
+
+.footer button{
+    border: 1px solid #e5e5e5;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    left: 35%;
+    padding: .9vw 2.1vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin-left: -2px;
+    margin-top: 2px;
+    top: 1px;
+}
+
+.footer label{
+    margin-top: 4vw;
+}
+
+.footer #copyright{
+    color: rgba(214, 214, 214, 0.417);
+    margin-top: 3vw;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Respnsive Code */
+
+@media screen and (max-width: 750px){
+    
+    /* Navbar code */
+
+    .nav{
+        height: 60px;
+        width: 100%;
+    }
+
+    .nav h1{
+        /* padding-left: 1vw; */
+        text-align: center;
+        font-size: 4.9vw;
+        margin-left: 1.1vw;
+    }
+
+    .sub-nav ul li{
+        display: none;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        margin-right: 1vw;
+        font-size: 6vw;
+        color: #fff;
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 .left{
+        width: 100%;
+    }
+
+    .section1 .left h2{
+        text-align: center;
+        font-size: 7vw;
+        width: 100%;
+        margin-left: -1vw;
+        margin-top: 13vw;
+    }
+
+    .left #element{
+        font-size: 7vw;
+    }
+
+    .section1 .left a #button1{
+        padding: 5vw 12vw;
+        text-align: center;
+        font-size: 3.6vw;
+        position: relative;
+        left: 13%;
+        top: 3vw;
+    }
+
+    .section1 .left a #button1 i{
+        font-size: 4vw;
+        margin-left: 3vw;
+    }
+
+    .section1 .left a #button2{
+        padding: 5vw 12vw;
+        text-align: center;
+        font-size: 3.6vw;
+        position: relative;
+        left: 15.50%;
+        width: 62%;
+        top: 9vw;
+    }
+
+    .section1 .left a #button2 i{
+        font-size: 4vw;
+        text-align: center;
+        margin-left: 3vw;
+    }
+
+    .section1 .right img{
+        width: 65vw;
+        text-align: center;
+        position: relative;
+        top: 8vw;
+        left: -11vw;
+    }
+
+    .section2{
+        height: 77vh;
+    }
+
+    .section2 h5{
+        padding-left: 3vw;
+        font-size: 3vw;
+    }
+
+    .section2 h3{
+        padding-left: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .section2 .box{
+        display: flex;
+        flex-direction: column;
+        height: 110vw;
+        width: 2px;
+        position: relative;
+        left: 38%;
+    }
+
+    .section2 .box .vertical{
+        width: 10vw;
+        height: 2px;
+        margin: 50px 0;
+    }
+
+    .section2 .box #vertical2{
+        position: relative;
+        left: -35px;
+    }
+
+    .section2 .box #vertical4{
+        position: relative;
+        left: -35px;
+    }
+
+    .box .vertical .image-top{
+        position: relative;
+        left: -13vw;
+        top: -4vw;
+        width: 10vw;
+    }
+
+    .section2 .box .vertical #img2{
+        position: relative;
+        left: 13vw;
+        top: -3.50vw;
+    }
+
+    .section2 .box .vertical #img4{
+        position: relative;
+        left: 13vw;
+        top: -3.50vw;
+    }
+
+    .vertical .vertical-title{
+        font-size: 2.4vw;
+        position: relative;
+        top: -20vw;
+        left: 33vw;
+    }
+
+    .section2 .vertical #title2{
+        position: relative;
+        left: 5vw;
+        top: -19vw;
+    }
+
+    .section2 .vertical #title4{
+        position: relative;
+        left: 5vw;
+        top: -19vw;
+    }
+
+    .section3{
+        height: 114vh;
+        width: 100%;
+    }
+
+    .section3 .qualities h3{
+        padding-left: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .section3 .qualities ul{
+        font-size: 4.0vw;
+        margin-left: 13vw;
+        line-height: 6.50vw;
+    }
+
+    .skills-section{
+        width: 100%;
+        height: 100vh;
+        margin-top: 7vw;
+    }
+
+    .skills-section h3{
+        padding-left: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .skills-section h4{
+        font-size: 4vw;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+    }
+
+    .skills-section h4::before{
+        margin-top: 1.95vw;
+    }
+
+    .skills-section h4::after{
+        margin-top: 1.95vw;
+    }
+
+    .technical-skills{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .technical-skills .list1{
+        width: 60%;
+        font-size: 4vw;
+        position: relative;
+        left: 6vw;
+        top: 3vw;
+    }
+
+    .technical-skills .list2{
+        font-size: 4vw;
+        width: 75%;
+        position: relative;
+        left: 6vw;
+        top: 2.2vw;
+    }
+
+    .technical-skills .list3{
+        font-size: 4vw;
+        width: 75%;
+        position: relative;
+        top: 10vw;
+        left: 6vw;
+    }
+
+    .technical-skills .list3 #list3{
+        position: relative;
+        left: 44.25vw;
+        top: -60vw;
+    }
+
+    .about{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .about h3{
+        padding-left: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .my-intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-intro .left-side{
+        width: 100%;
+    }
+
+    .my-intro .left-side img{
+        width: 70vw;
+        text-align: center;
+        position: relative;
+        left: 14.50vw;
+        margin-top: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .my-intro .right-side{
+        width: 100%;
+    }
+
+    .my-intro .right-side h4{
+        font-size: 5vw;
+        line-height: 7vw;
+        width: 75%;
+        text-align: center;
+        margin-left: 10.75vw;
+    }
+
+    .right-side #secondh4{
+        display: none;
+    }
+
+    .right-side #lasth4{
+        display: none;
+    }
+
+    .footer{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .footer h2{
+        position: relative;
+        top: 6vw;
+        font-size: 6vw;
+        margin-top: 3vw;
+    }
+
+    .footer h2::before{
+        margin-top: 3.90vw;
+    }
+
+    .footer h2::after{
+        margin-top: 3.90vw;
+    }
+
+    .footer .icons{
+        /* width: 40%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12vw;
+    }
+
+    .icons .items{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        gap: 2px;
+        margin-bottom: 6vw;
+        /* margin-left: 3vw; */
+    }
+
+    .items i{
+        font-size: 5.30vw;
+    }
+
+    .footer label input{
+        display: none;
+    }
+
+    label button{
+        display: none;
+    }
+
+    .footer .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .footer .text h5{
+        margin-bottom: 4vw;
+        font-size: 4vw;
+    }
+
+    .footer #copyright{
+        position: relative;
+        top: 4vw;
+    }
+
+}
